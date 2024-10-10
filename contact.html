@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="ignite25pic.png">
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <a href="index.html"><img src="ignite25pic.png" alt="Logo" class="top-left-logo"></a>
+    <div class="container">
+        <h1 style="text-align:center" class="organiser"><u>Organisers</u></h1>
+
+        <div class="organisers-cards"> 
+            <div class="card">
+                <img src="student.jpg" alt="Student" class="image" style="width:100px;height: 95px;">
+                <div class="container2">
+                    <h4><b>Elon Gates</b></h4> 
+                    <p>Student Convenor</p> 
+                </div>
+            </div>
+
+            <div class="card"> 
+                <img src="prof.jpg" alt="Prof" class="image" style="width:95px;height: 95px;">
+                <div class="container3">
+                    <h4><b>Prof. Bill Musk</b></h4> 
+                    <p>HOD</p> 
+                </div>
+            </div>
+        </div>
+
+        <center>
+        <div class="details">
+    <h1><u>Contact Us</u></h1>
+    <form name="form1" action="submit_form.php" method="post" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Details:</legend>
+            <b>Name: <font color="red">*</font></b><input type="text" id="name" name=name placeholder=name required tabindex=1 ><br>
+            <b>E-mail: <font color="red">*</font></b><input type="email" id="email" name=email placeholder=example@gmail.com required tabindex=2 minlength=8 maxlength=25><br>
+            <b>Subject: <font color="red">*</font></b><input type="text" id="subject" name="subject" required><br><br>
+            <b>Message/Query: <font color="red">*</font></b><textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <center>
+                <button type=submit onclick="defaultpage.html" value=submit >Submit
+                </button>
+                <button type=reset>Reset</button>
+                </center>
+        </fieldset>
+    </form>
+        </center>
+            </div>
+<br><br>
+
+
+</div>
+
+<script>
+    function validateForm() {
+        // Get form values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+
+        // Simple validation example
+        if (name === "" || email === "" || subject === "" || message === "") {
+            alert("All fields are required!");
+            return false; // Prevent form submission
+        }
+
+        // Additional validations can go here (like email format, etc.)
+        return true; // Allow form submission
+    }
+</script>
+</body>
+</html>

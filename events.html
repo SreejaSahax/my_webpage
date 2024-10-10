@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="ignite25pic.png">
+  <link rel="stylesheet" href="style4.css">
+  
+</head>
+<body>
+<div class="container">
+    <a href="index.html"><img src="ignite25pic.png" alt="Logo" class="top-left-logo"></a>
+    <div class="navigate">
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <!-- Navigation Links -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="text">
+    <h1 style="text-align:center" class="event"><u>Events</u></h1>
+    <p>Here’s a glimpse of the exciting events we have in store, designed to spark innovation, challenge your skills, and fuel your passion for technology.</p>
+    </div>
+
+    <div class="event-cards"> 
+        <div class="card">
+            <div class="container2">
+                <h3><b>CodeQuest</b></h3> 
+                <p style="color: black;font-size: 20px;">A competitive coding challenge where participants solve algorithmic puzzles in a race against time.</p> 
+            </div>
+        </div>
+
+        <div class="card"> 
+            <div class="container3">
+                <h3><b>Hackathon</b></h3> 
+                <p style="color: black;font-size: 20px;">A coding marathon where participants solve real-world problems through innovative software or hardware solutions.</p> 
+            </div>
+        </div>
+
+        <div class="card"> 
+            <div class="container4">
+                <h3><b>Brain Brawl</b></h3> 
+                <p style="color: black;font-size: 20px;"> A fun, fast-paced quiz that tests participants' knowledge of technology, programming, and current trends.</p> 
+            </div>
+        </div>
+
+        <div class="card"> 
+            <div class="container5">
+                <h3><b>Robo Race</b></h3> 
+                <p style="color: black;font-size: 20px;">A thrilling competition where teams build and race autonomous robots through an obstacle course.</p> 
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    function toggleMenu(x) {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("show");
+        x.classList.toggle("change");
+    }
+</script>
+</body>
+</html>
